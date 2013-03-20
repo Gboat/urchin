@@ -1,0 +1,1214 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Fxist.rc2""  // 非 Microsoft Visual C++ 编辑资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Fxist.ico"
+IDR_FxistTYPE           ICON                    "res\\FxistDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BITMAP_LOGO         BITMAP                  "res\\logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开索引...\tCtrl+O(&O)",     ID_FILE_OPEN
+        MENUITEM "关闭索引(C)\tCtrl+C",         ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "建立索引(&I)\tCtrl+I",        ID_FILE_INDEXING
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "创建停用词文件(&S) \tCtrl + S", ID_TOOL_CREATESTOPFILE
+        MENUITEM SEPARATOR
+        MENUITEM "创建FirteX格式文当集(&F) \tCtrl + F", 
+                                                ID_TOOL_CREATEFIRTEXCOL
+        MENUITEM SEPARATOR
+        MENUITEM "程序运行记录配置(&L)\tCtrl+L", ID_TOOL_LOGOPTION
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "程序运行记录窗口",            ID_VIEW_LOGWINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 Fxist(&A)...",           ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 239, 153
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "关于 Fxist"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Fxist-FirteX Indexing/Search Toolbox\nVersion 1.0",
+                    IDC_STATIC,37,36,119,18,SS_NOPREFIX
+    LTEXT           "Copyright(C) 2005--2006 Institute of Computing Tech, Chinese Academy of Sciences\nAll rights reserved.",
+                    IDC_STATIC,37,56,184,27
+    DEFPUSHBUTTON   "关闭",IDOK,182,130,50,16,WS_GROUP
+    LTEXT           "developer : 郭瑞杰(GuoRuijie)",IDC_STATIC,29,92,106,11
+    LTEXT           "ruijieguo@software.ict.ac.cn",IDC_STATIC_EMAIL,67,102,
+                    119,8
+    LTEXT           "MSN : jerry810410@hotmail.com",IDC_STATIC,46,112,103,8
+    CONTROL         147,IDC_STATIC,"Static",SS_BITMAP,0,-2,240,33
+    LTEXT           "www.firtex.org",IDC_STATIC_HOMEPAGE1,66,122,49,8
+    LTEXT           "firtex.sourceforge.net",IDC_STATIC_HOMEPAGE2,66,134,70,
+                    8
+    LTEXT           "home page :",IDC_STATIC,24,122,41,8
+    LTEXT           "Email : ",IDC_STATIC,44,102,23,8
+END
+
+IDD_DIALOG_OVERVIEW DIALOGEX 0, 0, 420, 249
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "索引名称：",IDC_STATIC,34,12,41,8
+    LTEXT           "文档总数：",IDC_STATIC,34,46,41,8
+    LTEXT           "字段总数：",IDC_STATIC,34,57,41,8
+    LTEXT           "索引词总数：",IDC_STATIC,26,68,49,8
+    LTEXT           "删除文档总数：",IDC_STATIC,18,79,57,8
+    LTEXT           "索引版本号：",IDC_STATIC,26,23,49,8
+    LTEXT           "分析器(Analyzer)：",IDC_STATIC,9,89,66,8
+    GROUPBOX        "",IDC_GROUP11,7,120,406,1
+    CONTROL         "",IDC_LIST_FIELD,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,170,138,156,104
+    LTEXT           "最后修改日期：",IDC_STATIC,18,100,57,8
+    LTEXT           "?",IDC_STATIC_INAME,77,12,165,8
+    LTEXT           "?",IDC_STATIC_IVERSION,77,23,165,8
+    LTEXT           "?",IDC_STATIC_DOCNUM,77,46,165,8
+    LTEXT           "?",IDC_STATIC_FIELDNUM,77,57,165,8
+    LTEXT           "?",IDC_STATIC_WORDNUM,77,68,165,8
+    LTEXT           "?",IDC_STATIC_DELDOCNUM,77,79,165,8
+    LTEXT           "?",IDC_STATIC_ANALYZER,77,89,165,8
+    LTEXT           "?",IDC_STATIC_LASTMODIFY,77,100,165,8
+    LTEXT           "索引桶个数：",IDC_STATIC,26,34,49,8
+    LTEXT           "?",IDC_STATIC_BARRELNUM,78,34,165,8
+    CONTROL         "",IDC_LIST_BARRELS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,7,138,149,104
+    LTEXT           "索引桶列表：",IDC_STATIC12,11,126,49,8
+    LTEXT           "字段列表：",IDC_STATIC_CURBARREL,172,127,43,8
+    LTEXT           "S:存储\nC:压缩\nA:分析\nI:索引\nS:词序列\nF:词和词频\nP:词 、词 频和位置\nN:否",
+                    IDC_STATIC13,330,143,72,71
+END
+
+IDD_DIALOG_DOCUMENTS DIALOGEX 0, 0, 387, 261
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "通过文档编号浏览",IDC_GROUP21,7,7,166,60
+    GROUPBOX        "根据查询词浏览",IDC_GROUP22,184,7,196,119
+    EDITTEXT        IDC_EDIT_DOCNO,62,23,48,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_DOCNO,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,111,22,11,
+                    14
+    LTEXT           "文档编号：",IDC_STATIC21,18,26,41,8
+    GROUPBOX        "",IDC_GROUP24,7,129,373,2
+    CONTROL         "",IDC_LIST_DOCRESULT,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,137,373,117
+    LTEXT           "当前文档编号：",IDC_STATIC25,7,74,57,8
+    LTEXT           "boost值：",IDC_STATIC26,29,91,35,8
+    LTEXT           "查询词：",IDC_STATIC22,202,26,33,8
+    EDITTEXT        IDC_EDIT_QUERYWORD,282,24,58,14,ES_AUTOHSCROLL
+    LTEXT           "文档频率：",IDC_STATIC23,194,60,41,8
+    EDITTEXT        IDC_EDIT_DF,238,58,37,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    GROUPBOX        "",IDC_GROUP23,184,79,196,1
+    PUSHBUTTON      "<",IDC_BUTTON_WPREVDOC,243,86,34,14
+    PUSHBUTTON      ">",IDC_BUTTON_WNEXTDOC,282,86,34,14
+    PUSHBUTTON      ">|",IDC_BUTTON_WLASTDOC,321,86,34,14
+    LTEXT           "文档词频：",IDC_STATIC24,283,61,41,8
+    PUSHBUTTON      "查询",IDC_BUTTON_WORDQUERY,342,24,24,14
+    PUSHBUTTON      "删除文档",IDC_BUTTON_DELDOC,128,81,43,14
+    PUSHBUTTON      "删除全部",IDC_BUTTON_WDELALLDOCS,251,107,39,14
+    PUSHBUTTON      "查询",IDC_BUTTON_DOCNOQUERY,126,22,24,14
+    PUSHBUTTON      "|<",IDC_BUTTON_WFIRSTDOC,202,86,34,14
+    EDITTEXT        IDC_EDIT_TF,328,58,37,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    PUSHBUTTON      "<",IDC_BUTTON_DPREVDOC,55,43,34,14
+    PUSHBUTTON      ">",IDC_BUTTON_DNEXTDOC,94,43,34,14
+    PUSHBUTTON      ">|",IDC_BUTTON_DLASTDOC,133,43,34,14
+    PUSHBUTTON      "|<",IDC_BUTTON_DFIRSTDOC,14,43,34,14
+    EDITTEXT        IDC_EDIT_CURDOCNO,68,71,46,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_EDIT_BOOST,67,88,46,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    COMBOBOX        IDC_COMBO_WANALYZER,238,41,127,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "分析器：",IDC_STATIC,202,43,33,8
+    COMBOBOX        IDC_COMBO_INDEXFIELD,238,24,42,61,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "恢复所有删除文档",IDC_BUTTON_UNDELALL,45,107,82,19
+END
+
+IDD_DIALOG_INDEXING DIALOGEX 0, 0, 490, 257
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,3,230,24
+    PUSHBUTTON      "打开参数",IDC_BUTTON_OPENARG,31,10,50,14
+    PUSHBUTTON      "保存参数",IDC_BUTTON_SAVEARG,100,10,50,14
+    PUSHBUTTON      "参数另存为",IDC_BUTTON_SAVEASARG,163,10,50,14
+    GROUPBOX        "用户参数",IDC_STATIC,7,30,236,119
+    LTEXT           "索引数据路径：",IDC_STATIC,20,47,57,8
+    LTEXT           "索引存放位置：",IDC_STATIC,20,67,57,8
+    LTEXT           "文档格式解析器：",IDC_STATIC,12,106,65,8
+    LTEXT           "文档内容分析器：",IDC_STATIC,12,123,65,8
+    EDITTEXT        IDC_EDIT_SOURCE,80,44,139,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_INDEXDST,80,62,139,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_PARSER,80,102,113,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ANALYZER,80,122,113,59,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSESRC,219,43,17,14
+    PUSHBUTTON      "...",IDC_BUTTON_INDEXDST,219,63,17,14
+    GROUPBOX        "系统参数",IDC_STATIC,250,30,180,119
+    LTEXT           "索引级别：",IDC_STATIC,293,47,41,8
+    LTEXT           "索引内存大小(M)：",IDC_STATIC,266,66,68,8
+    LTEXT           "缓存文档数：",IDC_STATIC,285,85,49,8
+    LTEXT           "最大索引词数/文档：",IDC_STATIC,258,104,76,8
+    LTEXT           "日志记录级别：",IDC_STATIC,277,123,57,8
+    COMBOBOX        IDC_COMBO_INDEXINGLEVEL,337,44,83,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MAXMEM,337,62,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_INDEXMEM,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,369,62,11,
+                    14
+    EDITTEXT        IDC_EDIT_CACHEDOCS,337,82,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",IDC_SPIN_CACHEDOCS,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,369,82,11,
+                    14
+    EDITTEXT        IDC_EDIT_MAXTERMS,337,102,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",IDC_SPIN_MAXTERMS,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,369,102,11,14
+    COMBOBOX        IDC_COMBO_LOGLEVEL,337,122,40,67,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "索引合并策略",IDC_STATIC,7,153,117,96,WS_GROUP
+    CONTROL         "不合并",IDC_RADIO_NOMERGE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,15,171,40,10
+    CONTROL         "动态平衡树合并",IDC_RADIO_HLMMERGE,"Button",
+                    BS_AUTORADIOBUTTON,15,191,72,10
+    CONTROL         "优化合并",IDC_RADIO_OPTIMIZE,"Button",
+                    BS_AUTORADIOBUTTON,15,211,48,10
+    PUSHBUTTON      "高级",IDC_BUTTON_HMADVANCE,88,188,33,14
+    GROUPBOX        "垃圾文档回收",IDC_STATIC,131,153,112,96,WS_GROUP
+    CONTROL         "回收门限值(按比例:0~1)",IDC_RADIO_RATIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,139,170,101,10
+    CONTROL         "回收门限值(按删除数)",IDC_RADIO_DELNUM,"Button",
+                    BS_AUTORADIOBUTTON,139,199,93,10
+    CONTROL         "强制回收",IDC_RADIO_FORCEGC,"Button",BS_AUTORADIOBUTTON,
+                    139,232,48,10
+    LTEXT           "比例：",IDC_STATIC,150,185,25,8
+    EDITTEXT        IDC_EDIT_RATIO,179,182,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "数目：",IDC_STATIC,150,215,25,8
+    EDITTEXT        IDC_EDIT_DELNUM,179,212,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_DELNUM,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,214,212,
+                    11,14
+    GROUPBOX        "索引读写模式",IDC_STATIC,250,153,99,96,WS_GROUP
+    CONTROL         "创建",IDC_RADIO_WRITEMODE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,259,170,32,10
+    CONTROL         "添加(增量索引)",IDC_RADIO_APPENDMODE,"Button",
+                    BS_AUTORADIOBUTTON,259,189,69,10
+    GROUPBOX        "可选参数",IDC_STATIC,357,153,73,49
+    CONTROL         "打开索引",IDC_CHECK_AUTOOPEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,363,168,48,10
+    CONTROL         "打开LOG窗口",IDC_CHECK_AUTOOPENLOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,363,184,61,10
+    PUSHBUTTON      "开始索引",IDC_BUTTON_STARTINDEX,358,229,46,20
+    CONTROL         "可搜索",IDC_CHECK_SEARCHABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,259,208,40,10
+    PUSHBUTTON      "选项",IDC_BUTTON_ANALYZE_OPTION,197,122,39,12
+    LTEXT           "文档集类型：",IDC_STATIC,27,87,49,8
+    COMBOBOX        IDC_COMBO_COLLECTION,80,82,113,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "设置模式",IDC_BUTTON_COLSCHEMA,197,82,39,12
+    PUSHBUTTON      "选项",IDC_BUTTON_PARSER_OPTION,197,102,39,12
+END
+
+IDD_DIALOG_SEARCHING DIALOGEX 0, 0, 464, 273
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "文档内容分析器：",IDC_STATIC,189,21,65,8
+    LTEXT           "默认查询域：",IDC_STATIC,17,20,49,8
+    COMBOBOX        IDC_COMBO_SEARCH_ANALYZER,257,19,113,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SEARCHDEFFIELD,70,19,113,77,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "查询表达式：",IDC_STATIC,15,37,49,8
+    EDITTEXT        IDC_EDIT_QUERYEXP,15,49,261,46,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "检索内存：",IDC_STATIC,287,51,41,8
+    EDITTEXT        IDC_EDIT_SEARCHMEM,334,48,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",IDC_SPIN_SEARCHMEM,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,372,47,10,
+                    14
+    LTEXT           "M",IDC_STATIC,377,50,8,8
+    LTEXT           "返回文档数：",IDC_STATIC,279,67,49,8
+    EDITTEXT        IDC_EDIT_TOPK,334,66,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_TOPK,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,373,65,10,
+                    14
+    PUSHBUTTON      "查询",IDC_BUTTON_SEARCH,281,82,50,14
+    GROUPBOX        "搜索",IDC_GROUP41,7,7,447,97
+    GROUPBOX        "结果",IDC_GROUP42,7,109,447,157
+    LTEXT           "匹配文档数：",IDC_STATIC,16,122,49,8
+    LTEXT           "?",IDC_STATIC_TOTALHITS,64,122,49,8
+    LTEXT           "返回文档数：",IDC_STATIC,118,121,49,8
+    LTEXT           "?",IDC_STATIC_RETNUMS,168,121,49,8
+    CONTROL         "",IDC_LIST_QUERYHITS,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,10,135,440,128
+    PUSHBUTTON      "选项",IDC_BUTTON_ANA_OPTION,374,19,32,12
+END
+
+IDD_DIALOG_INDEXMAINTAIN DIALOGEX 0, 0, 384, 285
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "待合并索引列表：",IDC_STATIC,14,14,65,8
+    CONTROL         "",IDC_LIST_MERGEINDEX,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,12,23,314,80
+    PUSHBUTTON      "添加",IDC_BUTTON_ADDINDEX,333,33,37,14
+    PUSHBUTTON      "删除",IDC_BUTTON_DELINDEX,333,51,37,14
+    PUSHBUTTON      "开始合并",IDC_BUTTON_MERGEINDEX,333,69,37,25
+    GROUPBOX        "多索引合并",IDC_GROUP51,7,3,370,106
+    LTEXT           "索引路径：",IDC_STATIC,12,122,41,8
+    EDITTEXT        IDC_EDIT_MERGEINDEX,57,119,187,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_MERGEBROWSE,245,118,21,14
+    GROUPBOX        "",IDC_GROUP53,7,110,370,27
+    GROUPBOX        "合并策略",IDC_GROUP52,7,138,234,117,WS_GROUP
+    CONTROL         "层次合并",IDC_RADIO_MERGE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,21,150,48,10
+    CONTROL         "优化合并",IDC_RADIO_OPTMERGE,"Button",
+                    BS_AUTORADIOBUTTON,21,165,48,10
+    CONTROL         "选择合并：",IDC_RADIO_PARTMERGE,"Button",
+                    BS_AUTORADIOBUTTON,21,180,56,10
+    PUSHBUTTON      "高级",IDC_BUTTON_HMADVANCE,70,147,33,14
+    CONTROL         "",IDC_LIST_BARRELS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,74,181,159,68
+    GROUPBOX        "垃圾文档回收",IDC_GROUP54,254,139,123,117,WS_GROUP
+    CONTROL         "回收门限值(按比例:0~1)",IDC_RADIO_MRATIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,262,155,101,10
+    CONTROL         "回收门限值(按删除数)",IDC_RADIO_MDELNUM,"Button",
+                    BS_AUTORADIOBUTTON,262,184,93,10
+    CONTROL         "强制回收",IDC_RADIO_MFORCEGC,"Button",
+                    BS_AUTORADIOBUTTON,262,217,48,10
+    LTEXT           "比例：",IDC_STATIC51,273,170,25,8
+    EDITTEXT        IDC_EDIT_MRATIO,302,167,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "数目：",IDC_STATIC52,273,200,25,8
+    EDITTEXT        IDC_EDIT_MDELNUM,302,197,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",IDC_SPIN_MDELNUM,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,337,197,
+                    11,14
+    CONTROL         "",IDC_PROGRESS_MERGE,"msctls_progress32",WS_BORDER,12,
+                    261,304,14
+    PUSHBUTTON      "开始合并",IDC_BUTTON_MERGEBARRELS,321,258,46,19
+END
+
+IDD_DIALOG_COLCFG DIALOGEX 0, 0, 219, 72
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "文档集(Collecion)参数配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,47,51,50,14
+    PUSHBUTTON      "取消",IDCANCEL,123,51,50,14
+    CONTROL         "索引文件日期",IDC_CHECK_INDEXMODIFY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,9,64,10
+    LTEXT           "文件日期字段名:",IDC_STATIC,20,26,60,8
+    EDITTEXT        IDC_EDIT_FIELDNAME,86,23,48,14,ES_AUTOHSCROLL
+    CONTROL         "存储",IDC_CHECK_STORE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,26,32,10
+    CONTROL         "索引",IDC_CHECK_INDEX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,178,26,32,10
+END
+
+IDD_DIALOG_INDEXINGPROG DIALOGEX 0, 0, 240, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "正在索引..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "强制终止索引",IDOK,126,50,65,14
+    CONTROL         "",IDC_PROGRESS_INDEXING,"msctls_progress32",WS_BORDER,7,
+                    22,226,14
+    PUSHBUTTON      "显示运行记录",IDC_BUTTON_SHOWLOG,48,50,65,14
+END
+
+IDD_FORWARDINDEXDLG DIALOGEX 0, 0, 366, 244
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_TVDOCNO,92,24,48,15,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_TVDOCNO,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,141,23,11,
+                    15
+    LTEXT           "文档编号：",IDC_STATIC21,48,27,41,9
+    PUSHBUTTON      "查询",IDC_BUTTON_TVQUERY,156,23,24,15
+    PUSHBUTTON      "<",IDC_BUTTON_TVPREVDOC,85,46,34,15
+    PUSHBUTTON      ">",IDC_BUTTON_TVNEXTDOC,124,46,34,15
+    PUSHBUTTON      ">|",IDC_BUTTON_TVLASTDOC,163,46,34,15
+    PUSHBUTTON      "|<",IDC_BUTTON_TVFIRSTDOC,44,46,34,15
+    GROUPBOX        "前向索引检索",IDC_STATIC,7,7,235,99
+    LTEXT           "字段：",IDC_STATIC,39,74,25,8
+    COMBOBOX        IDC_COMBO_TVFIELD,69,71,68,30,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "前向索引类型：",IDC_STATIC,15,89,49,8
+    EDITTEXT        IDC_EDIT_FORWARDINDEX,7,125,352,112,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | 
+                    WS_HSCROLL
+    LTEXT           "前向索引：",IDC_STATIC,7,112,33,8
+    CONTROL         "词序列",IDC_RADIO_SEQUENCE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,69,89,40,10
+    CONTROL         "词和词频",IDC_RADIO_FREQ,"Button",BS_AUTORADIOBUTTON,
+                    113,90,48,10
+    CONTROL         "词、词频和位置",IDC_RADIO_POSITION,"Button",
+                    BS_AUTORADIOBUTTON,162,90,72,10
+    LTEXT           "",IDC_STATIC_TVTIP,42,112,111,8
+END
+
+IDD_DIALOG_PLUGIN DIALOGEX 0, 0, 372, 211
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_PLUGIN,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,
+                    7,358,92
+    GROUPBOX        "插件信息",IDC_GROUP71,7,107,358,97
+    LTEXT           "插件名称：",IDC_STATIC71,11,122,41,8
+    LTEXT           "标识：",IDC_STATIC73,27,132,25,8
+    LTEXT           "CLSID：",IDC_STATIC74,24,143,28,8
+    LTEXT           "使用：",IDC_STATIC75,27,154,25,8
+    PUSHBUTTON      "安装",IDC_BUTTON_SETUP,239,186,50,14
+    PUSHBUTTON      "获取更多...",IDC_BUTTON_GETMORE,297,186,50,14
+    LTEXT           "?",IDC_STATIC_PLUGNAME,52,122,239,8
+    LTEXT           "?",IDC_STATIC_PLUGID,52,132,239,8
+    LTEXT           "?",IDC_STATIC_PLUGCLSID,52,143,239,8
+    LTEXT           "?",IDC_STATIC_PLUGENABLE,52,154,239,8
+END
+
+IDD_DIALOG_CREATEFXCOL DIALOGEX 0, 0, 251, 191
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "创建FirteX Collection"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "源文件目录：",IDC_STATIC,10,12,49,8
+    EDITTEXT        IDC_EDIT_FXCOLSRC,62,10,157,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_FXCOLBROWSE,218,10,18,14
+    CONTROL         "合并成单个文件",IDC_CHECK_MERGETOONE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,27,34,72,10
+    GROUPBOX        "分割策略",IDC_STATIC,27,48,207,95,WS_GROUP
+    CONTROL         "不分割",IDC_RADIO_NOSPLITE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,33,63,40,10
+    CONTROL         "随机分割",IDC_RADIO_RANDSPLITE,"Button",
+                    BS_AUTORADIOBUTTON,33,78,48,10
+    CONTROL         "根据标签分割",IDC_RADIO_TAGSPLITE,"Button",
+                    BS_AUTORADIOBUTTON,33,113,64,10
+    LTEXT           "大小：",IDC_STATIC,43,94,25,8
+    EDITTEXT        IDC_EDIT_MINSIZE,71,91,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_MINSIZE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,101,91,10,
+                    14
+    LTEXT           "～",IDC_STATIC,114,94,9,8
+    EDITTEXT        IDC_EDIT_MAXSIZE,126,91,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN_MAXSIZE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,159,91,10,
+                    14
+    LTEXT           "K",IDC_STATIC,171,94,8,8
+    PUSHBUTTON      "创建",IDC_BUTTON_CREATE,100,169,50,14
+    PUSHBUTTON      "关闭",IDCANCEL,184,169,50,14
+    LTEXT           "标签：",IDC_STATIC,43,127,25,8
+    EDITTEXT        IDC_EDIT_BEGINTAG,71,124,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ENDTAG,126,124,40,14,ES_AUTOHSCROLL
+    LTEXT           "～",IDC_STATIC,114,127,9,8
+    CONTROL         "",IDC_PROGRESS_CREATE,"msctls_progress32",WS_BORDER,27,
+                    148,206,14
+    EDITTEXT        IDC_EDIT_MERGEFILE,103,31,116,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_MERGEFILEBROWSE,218,31,18,14
+END
+
+IDD_DIALOG_LOGOPTION DIALOGEX 0, 0, 268, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "程序运行记录设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "保存",IDOK,73,63,50,14
+    PUSHBUTTON      "放弃",IDCANCEL,150,63,50,14
+    CONTROL         "至文件",IDC_RADIO_TOFILE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,11,22,40,10
+    CONTROL         "至窗口",IDC_RADIO_TOWINDOW,"Button",BS_AUTORADIOBUTTON,
+                    11,39,40,10
+    EDITTEXT        IDC_EDIT_LOGFILE,54,20,155,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_LOGBROWSE,208,20,17,14
+    GROUPBOX        "记录输出位置",IDC_STATIC,7,6,254,49
+    PUSHBUTTON      "查看",IDC_BUTTON_VIEWLOG,229,20,28,14
+END
+
+IDD_DIALOG_LOG DIALOGEX 0, 0, 342, 174
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "程序运行记录"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDOK,145,153,50,14
+    LISTBOX         IDC_LIST_LOG,7,8,328,138,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_STOPFILE DIALOGEX 0, 0, 277, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "生成停用词文件"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "停用词源文件：",IDC_STATIC,17,11,57,8
+    LTEXT           "停用词目标文件：",IDC_STATIC,9,30,65,8
+    LTEXT           "分析器：",IDC_STATIC,41,49,33,8
+    EDITTEXT        IDC_EDIT_SFSRC,78,7,169,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SFDST,78,27,169,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_SFANALYZE,78,47,110,62,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_BUTTON_SFSRCBROWSE,247,7,20,14
+    PUSHBUTTON      "...",IDC_BUTTON_SFDSTBROWSE,247,27,20,14
+    DEFPUSHBUTTON   "生成",IDOK,59,69,50,14
+    PUSHBUTTON      "放弃",IDCANCEL,152,69,50,14
+END
+
+IDD_DIALOG_SCHEMA DIALOGEX 0, 0, 394, 262
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "文档集模式定义"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_SCHEMA,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | 
+                    WS_TABSTOP,7,36,380,100
+    LTEXT           "字段名称:",IDC_STATIC,12,153,36,8
+    EDITTEXT        IDC_EDIT_FIELDNAME,51,151,82,14,ES_AUTOHSCROLL
+    LTEXT           "字段别名:",IDC_STATIC,135,153,36,8
+    EDITTEXT        IDC_EDIT_ALIAS,175,151,82,14,ES_AUTOHSCROLL
+    LTEXT           "索引器:",IDC_STATIC,20,174,28,8
+    COMBOBOX        IDC_COMBO_INDEXER,51,172,82,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "分析器:",IDC_STATIC,143,174,28,8
+    COMBOBOX        IDC_COMBO_FIELDANALYZER,175,172,82,47,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "索引级别:",IDC_STATIC,262,174,36,8
+    COMBOBOX        IDC_COMBO_SCHEMAINDEXINGLEVEL,302,172,82,67,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "索引属性:",IDC_STATIC,12,193,36,8
+    COMBOBOX        IDC_COMBO_INDEX,51,191,49,46,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "存储属性:",IDC_STATIC,110,193,36,8
+    COMBOBOX        IDC_COMBO_STORE,150,191,49,44,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "前向索引:",IDC_STATIC,209,194,37,8
+    COMBOBOX        IDC_COMBO_FORWARDINDEX,249,191,49,48,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "重要度:",IDC_STATIC,306,193,28,8
+    EDITTEXT        IDC_EDIT_FIELDBOOST,339,191,45,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "修改",IDC_BUTTON_SCMODIFY,103,209,50,14
+    PUSHBUTTON      "添加",IDC_BUTTON_SCADD,172,209,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON_SCDEL,241,209,50,14
+    GROUPBOX        "参数值",IDC_STATIC,7,139,380,94
+    DEFPUSHBUTTON   "保存",IDOK,128,241,50,14
+    PUSHBUTTON      "放弃",IDCANCEL,214,241,50,14
+    LTEXT           "文档标签：",IDC_STATIC,25,10,41,8
+    EDITTEXT        IDC_EDIT_DOCTAG,70,8,72,14,ES_AUTOHSCROLL
+    LTEXT           "文档模式定义：",IDC_STATIC,9,24,57,8
+END
+
+IDD_DIALOG_HMADVANCE DIALOGEX 0, 0, 222, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "层次合并高级设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "索引合并策略",IDC_STATIC,7,4,208,102
+    CONTROL         "动态平衡树合并(DBT)",IDC_RADIO_HLM,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,22,23,90,10
+    CONTROL         "Geometric Partition(GP)",IDC_RADIO_GP,"Button",
+                    BS_AUTORADIOBUTTON,22,56,91,10
+    CONTROL         "Logarithmic Merge",IDC_RADIO_LOG,"Button",
+                    BS_AUTORADIOBUTTON,22,85,74,10
+    LTEXT           "m:",IDC_STATIC,30,40,9,8
+    EDITTEXT        IDC_EDIT_HLM_M,42,38,28,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_HLM_M,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,68,38,10,
+                    14
+    LTEXT           "c:",IDC_STATIC,82,40,8,8
+    EDITTEXT        IDC_EDIT_HLM_C,94,38,28,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_HLM_C,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,118,38,10,
+                    14
+    LTEXT           "s:",IDC_STATIC,133,40,9,8
+    EDITTEXT        IDC_EDIT_HLM_S,146,38,28,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_HLM_S,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,173,38,10,
+                    14
+    CONTROL         "r:",IDC_RADIO_GP_R,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,33,71,21,10
+    CONTROL         "p:",IDC_RADIO_GP_P,"Button",BS_AUTORADIOBUTTON,103,71,
+                    23,10
+    EDITTEXT        IDC_EDIT_GPR,57,69,28,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_GPR,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,83,68,10,
+                    14
+    EDITTEXT        IDC_EDIT_GPP,127,69,28,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_GPP,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,153,69,10,
+                    14
+    DEFPUSHBUTTON   "确定",IDOK,51,116,50,14
+    PUSHBUTTON      "放弃",IDCANCEL,119,116,50,14
+END
+
+IDD_DIALOG_ANALYZER_OPTION DIALOGEX 0, 0, 235, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "分析器选项"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,57,101,50,14
+    PUSHBUTTON      "取消",IDCANCEL,127,101,50,14
+    LTEXT           "停用词文件：",IDC_STATIC,12,35,49,8
+    EDITTEXT        IDC_EDIT_STOPFILE,62,34,139,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_STOPFILEBROWSE,201,33,17,14
+    GROUPBOX        "停用词",IDC_STATIC,7,7,221,49
+    LTEXT           "停用词组件：",IDC_STATIC,12,19,49,8
+    GROUPBOX        "词干(stemming)",IDC_STATIC,7,61,221,35
+    COMBOBOX        IDC_COMBO_STOPFILTER,62,16,66,45,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "词干组件：",IDC_STATIC,20,77,41,8
+    COMBOBOX        IDC_COMBO_STEMMING,62,76,66,57,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "语言：",IDC_STATIC,131,77,25,8
+    COMBOBOX        IDC_COMBO_STEMMING_LANGUAGE,160,76,66,57,
+                    CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_PARSER_OPTION DIALOGEX 0, 0, 278, 138
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "解释器参数"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,67,117,50,14
+    PUSHBUTTON      "取消",IDCANCEL,159,117,50,14
+    GROUPBOX        "前向索引",IDC_STATIC,7,31,264,33
+    LTEXT           "字段名：",IDC_STATIC,19,47,33,8
+    LTEXT           "参数：",IDC_STATIC,9,15,25,8
+    EDITTEXT        IDC_EDIT_PARSERPARAM,38,12,233,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PARSER_FILED,56,44,61,14,ES_AUTOHSCROLL
+    LTEXT           "方式：",IDC_STATIC,124,47,25,8
+    COMBOBOX        IDC_COMBO_PARSER_FI,152,44,61,48,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加参数",IDC_BUTTON_FI_ADD,216,43,42,14
+    GROUPBOX        "元数据",IDC_STATIC,7,69,264,36
+    LTEXT           "名称：",IDC_STATIC,27,85,25,8
+    COMBOBOX        IDC_COMBO_PARSER_META,56,83,61,65,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "提取：",IDC_STATIC,124,86,25,8
+    COMBOBOX        IDC_COMBO_PARSER_GETMETA,152,83,61,48,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "添加参数",IDC_BUTTON_META_ADD,216,82,42,14
+END
+
+IDD_DIALOG_FIELDANALYZER DIALOGEX 0, 0, 220, 119
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "域的内容分析器配置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,163,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,163,24,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,2,1981
+ PRODUCTVERSION 1,0,2,1981
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "中国科学院计算技术研究所"
+            VALUE "FileDescription", "FirteX Indexing/Search Toolbox"
+            VALUE "FileVersion", "1.0.2"
+            VALUE "InternalName", "Fxist.exe"
+            VALUE "LegalCopyright", "Copyright(C)中国科学院计算技术研究所 保留所有权利。"
+            VALUE "OriginalFilename", "Fxist.exe"
+            VALUE "ProductName", "FirteX Indexing/Search Toolbox"
+            VALUE "ProductVersion", "1.0.2"
+            VALUE "SpecialBuild", "1981"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_DIALOG_OVERVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 413
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_DIALOG_DOCUMENTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 380
+        VERTGUIDE, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 254
+    END
+
+    IDD_DIALOG_INDEXING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 482
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 249
+    END
+
+    IDD_DIALOG_SEARCHING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 457
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_DIALOG_INDEXMAINTAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 377
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 278
+    END
+
+    IDD_DIALOG_COLCFG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+
+    IDD_DIALOG_INDEXINGPROG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_FORWARDINDEXDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 359
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_DIALOG_PLUGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_DIALOG_CREATEFXCOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_DIALOG_LOGOPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_DIALOG_LOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_DIALOG_STOPFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DIALOG_SCHEMA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_DIALOG_HMADVANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_DIALOG_ANALYZER_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_DIALOG_PARSER_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_DIALOG_FIELDANALYZER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_INDEXING DLGINIT
+BEGIN
+    IDC_COMBO_INDEXINGLEVEL, 0x403, 11, 0
+0x4f57, 0x4452, 0x4c5f, 0x5645, 0x4c45, "\000" 
+    IDC_COMBO_INDEXINGLEVEL, 0x403, 15, 0
+0x4f44, 0x5543, 0x454d, 0x544e, 0x4c5f, 0x5645, 0x4c45, "\000" 
+    IDC_COMBO_INDEXINGLEVEL, 0x403, 17, 0
+0x4f44, 0x5543, 0x454d, 0x544e, 0x4c5f, 0x5645, 0x4c45, 0x305f, "\000" 
+    IDC_COMBO_LOGLEVEL, 0x403, 8, 0
+0x6564, 0x6166, 0x6c75, 0x0074, 
+    IDC_COMBO_LOGLEVEL, 0x403, 6, 0
+0x7265, 0x6f72, 0x0072, 
+    IDC_COMBO_LOGLEVEL, 0x403, 8, 0
+0x6177, 0x6e72, 0x6e69, 0x0067, 
+    IDC_COMBO_LOGLEVEL, 0x403, 5, 0
+0x6e69, 0x6f66, "\000" 
+    IDC_COMBO_LOGLEVEL, 0x403, 6, 0
+0x6564, 0x7562, 0x0067, 
+    IDC_COMBO_LOGLEVEL, 0x403, 8, 0
+0x6964, 0x6173, 0x6c62, 0x0065, 
+    0
+END
+
+IDD_DIALOG_STOPFILE DLGINIT
+BEGIN
+    IDC_COMBO_SFANALYZE, 0x403, 27, 0
+0xd0d6, 0xc4ce, 0xd6b7, 0xcab4, 0x4328, 0x6843, 0x6e69, 0x7365, 0x4165, 
+0x616e, 0x796c, 0x657a, 0x2972, "\000" 
+    0
+END
+
+IDD_DIALOG_SCHEMA DLGINIT
+BEGIN
+    IDC_COMBO_INDEXER, 0x403, 17, 0
+0x6e69, 0x6564, 0x6578, 0x2e72, 0x6964, 0x7463, 0x6168, 0x6873, "\000" 
+    IDC_COMBO_INDEXER, 0x403, 17, 0
+0x6e69, 0x6564, 0x6578, 0x2e72, 0x6164, 0x6574, 0x6974, 0x656d, "\000" 
+    IDC_COMBO_FIELDANALYZER, 0x403, 18, 0
+0x6e61, 0x6c61, 0x7a79, 0x7265, 0x732e, 0x6174, 0x646e, 0x7261, 0x0064, 
+
+    IDC_COMBO_FIELDANALYZER, 0x403, 18, 0
+0x6e61, 0x6c61, 0x7a79, 0x7265, 0x642e, 0x7461, 0x7465, 0x6d69, 0x0065, 
+
+    IDC_COMBO_SCHEMAINDEXINGLEVEL, 0x403, 2, 0
+0x0020, 
+    IDC_COMBO_SCHEMAINDEXINGLEVEL, 0x403, 11, 0
+0x4f57, 0x4452, 0x4c5f, 0x5645, 0x4c45, "\000" 
+    IDC_COMBO_SCHEMAINDEXINGLEVEL, 0x403, 15, 0
+0x4f44, 0x5543, 0x454d, 0x544e, 0x4c5f, 0x5645, 0x4c45, "\000" 
+    IDC_COMBO_SCHEMAINDEXINGLEVEL, 0x403, 17, 0
+0x4f44, 0x5543, 0x454d, 0x544e, 0x4c5f, 0x5645, 0x4c45, 0x305f, "\000" 
+    IDC_COMBO_INDEX, 0x403, 3, 0
+0x4f4e, "\000" 
+    IDC_COMBO_INDEX, 0x403, 8, 0
+0x4e41, 0x4c41, 0x5a59, 0x0045, 
+    IDC_COMBO_INDEX, 0x403, 11, 0
+0x4e55, 0x415f, 0x414e, 0x594c, 0x455a, "\000" 
+    IDC_COMBO_STORE, 0x403, 3, 0
+0x4f4e, "\000" 
+    IDC_COMBO_STORE, 0x403, 4, 0
+0x4559, 0x0053, 
+    IDC_COMBO_STORE, 0x403, 9, 0
+0x4f43, 0x504d, 0x4552, 0x5353, "\000" 
+    IDC_COMBO_FORWARDINDEX, 0x403, 3, 0
+0x4f4e, "\000" 
+    IDC_COMBO_FORWARDINDEX, 0x403, 9, 0
+0x4553, 0x5551, 0x4e45, 0x4543, "\000" 
+    IDC_COMBO_FORWARDINDEX, 0x403, 5, 0
+0x5246, 0x5145, "\000" 
+    IDC_COMBO_FORWARDINDEX, 0x403, 9, 0
+0x4f50, 0x4953, 0x4954, 0x4e4f, "\000" 
+    0
+END
+
+IDD_DIALOG_ANALYZER_OPTION DLGINIT
+BEGIN
+    IDC_COMBO_STOPFILTER, 0x403, 1, 0
+"\000" 
+    IDC_COMBO_STOPFILTER, 0x403, 9, 0
+0x7473, 0x6e61, 0x6164, 0x6472, "\000" 
+    IDC_COMBO_STEMMING, 0x403, 1, 0
+"\000" 
+    IDC_COMBO_STEMMING, 0x403, 9, 0
+0x6e73, 0x776f, 0x6162, 0x6c6c, "\000" 
+    IDC_COMBO_STEMMING_LANGUAGE, 0x403, 1, 0
+"\000" 
+    IDC_COMBO_STEMMING_LANGUAGE, 0x403, 8, 0
+0x6e45, 0x6c67, 0x7369, 0x0068, 
+    0
+END
+
+IDD_DIALOG_PARSER_OPTION DLGINIT
+BEGIN
+    IDC_COMBO_PARSER_FI, 0x403, 3, 0
+0x4f4e, "\000" 
+    IDC_COMBO_PARSER_FI, 0x403, 9, 0
+0x4553, 0x5551, 0x4e45, 0x4543, "\000" 
+    IDC_COMBO_PARSER_FI, 0x403, 5, 0
+0x5246, 0x5145, "\000" 
+    IDC_COMBO_PARSER_FI, 0x403, 9, 0
+0x4f50, 0x4953, 0x4954, 0x4e4f, "\000" 
+    IDC_COMBO_PARSER_GETMETA, 0x403, 3, 0
+0xc7ca, "\000" 
+    IDC_COMBO_PARSER_GETMETA, 0x403, 3, 0
+0xf1b7, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Fxist\n\nFxist\n\n\nFxist.Document\nFxist.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Fxist"
+    AFX_IDS_IDLEMESSAGE     "还未打开索引"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "0个文档                "
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有索引\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_CLOSEINDEX      "关闭打开的索引\n关闭"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Fxist.rc2"  // 非 Microsoft Visual C++ 编辑资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,45 @@
+#ifndef _COMERROR_H_
+#define _COMERROR_H_
+
+#include "Com.h"
+
+//////////////////////////////////////////////////////
+// Error and error codes
+//////////////////////////////////////////////////////
+
+#ifdef __cplusplus
+	#define FX_MAKE_HRESULT(x) ((firtex::com::FX_HRESULT)(x))
+#else
+	#define FX_MAKE_HRESULT(x) ((FX_HRESULT)(x))
+#endif
+
+#define FX_S_OK							FX_MAKE_HRESULT(0x00000000L)
+#define FX_S_FALSE						FX_MAKE_HRESULT(0x00000001L)
+
+#define FX_CLASS_E_NOAGGREGATION		FX_MAKE_HRESULT(0x80040110L)
+#define FX_CLASS_E_CLASSNOTAVAILABLE	FX_MAKE_HRESULT(0x80040111L)
+
+#define FX_CO_S_NOTALLINTERFACES		FX_MAKE_HRESULT(0x00080012L)
+#define FX_CO_E_CLASSSTRING				FX_MAKE_HRESULT(0x800401F3L)
+#define FX_CO_E_DLLNOTFOUND				FX_MAKE_HRESULT(0x800401F8L)
+#define FX_CO_E_OBJISREG				FX_MAKE_HRESULT(0x800401FCL)
+
+#define FX_E_NOTIMPL					FX_MAKE_HRESULT(0x80004001L)
+#define FX_E_NOINTERFACE				FX_MAKE_HRESULT(0x80004002L)
+#define FX_E_POINTER					FX_MAKE_HRESULT(0x80004003L)
+#define FX_E_ABORT						FX_MAKE_HRESULT(0x80004004L)
+#define FX_E_FAIL						FX_MAKE_HRESULT(0x80004005L)
+#define FX_E_ACCESSDENIED				FX_MAKE_HRESULT(0x80070005L)
+#define FX_E_OUTOFMEMORY				FX_MAKE_HRESULT(0x8007000EL)
+#define FX_E_INVALIDARG					FX_MAKE_HRESULT(0x80070057L)
+#define FX_E_UNEXPECTED					FX_MAKE_HRESULT(0x8000FFFFL)
+
+#define FX_RPC_S_UUID_LOCAL_ONLY		FX_MAKE_HRESULT(1824L)
+#define FX_RPC_E_CHANGED_MODE			FX_MAKE_HRESULT(0x80010106L)
+
+#define SEVERITY_SUCCESS    0
+#define SEVERITY_ERROR      1
+#define FX_SUCCEEDED(Status)	((Status) >= 0)
+#define FX_FAILED(Status)		((Status) < 0)
+
+#endif // _COMERROR_H_

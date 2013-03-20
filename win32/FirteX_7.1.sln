@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fxist4c", "fxist4c_7.1.vcproj", "{F70220DF-7A95-420D-BA2A-BD7F4BA56FA9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirteX", "FirteX_7.1.vcproj", "{07E8622C-8E15-45F3-8360-5A58291AF474}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fxist", "..\app\Fxist\Fxist_7.1.vcproj", "{A7CCEA79-D89F-4457-87B2-34764D3BFBE3}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HTMLParserPlugin", "..\plugins\HTMLParserPlugin\HTMLParserPlugin_7.1.vcproj", "{21B85D8C-58ED-4D42-B99D-5A1310E22467}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "com", "com_7.1.vcproj", "{D0213A01-50B3-4F78-AC70-4D04E603AF50}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F70220DF-7A95-420D-BA2A-BD7F4BA56FA9}.Debug.ActiveCfg = Debug|Win32
+		{F70220DF-7A95-420D-BA2A-BD7F4BA56FA9}.Debug.Build.0 = Debug|Win32
+		{F70220DF-7A95-420D-BA2A-BD7F4BA56FA9}.Release.ActiveCfg = Release|Win32
+		{F70220DF-7A95-420D-BA2A-BD7F4BA56FA9}.Release.Build.0 = Release|Win32
+		{07E8622C-8E15-45F3-8360-5A58291AF474}.Debug.ActiveCfg = Debug|Win32
+		{07E8622C-8E15-45F3-8360-5A58291AF474}.Debug.Build.0 = Debug|Win32
+		{07E8622C-8E15-45F3-8360-5A58291AF474}.Release.ActiveCfg = Release|Win32
+		{07E8622C-8E15-45F3-8360-5A58291AF474}.Release.Build.0 = Release|Win32
+		{A7CCEA79-D89F-4457-87B2-34764D3BFBE3}.Debug.ActiveCfg = Debug|Win32
+		{A7CCEA79-D89F-4457-87B2-34764D3BFBE3}.Debug.Build.0 = Debug|Win32
+		{A7CCEA79-D89F-4457-87B2-34764D3BFBE3}.Release.ActiveCfg = Release|Win32
+		{A7CCEA79-D89F-4457-87B2-34764D3BFBE3}.Release.Build.0 = Release|Win32
+		{21B85D8C-58ED-4D42-B99D-5A1310E22467}.Debug.ActiveCfg = Debug|Win32
+		{21B85D8C-58ED-4D42-B99D-5A1310E22467}.Debug.Build.0 = Debug|Win32
+		{21B85D8C-58ED-4D42-B99D-5A1310E22467}.Release.ActiveCfg = Release|Win32
+		{21B85D8C-58ED-4D42-B99D-5A1310E22467}.Release.Build.0 = Release|Win32
+		{D0213A01-50B3-4F78-AC70-4D04E603AF50}.Debug.ActiveCfg = Debug|Win32
+		{D0213A01-50B3-4F78-AC70-4D04E603AF50}.Debug.Build.0 = Debug|Win32
+		{D0213A01-50B3-4F78-AC70-4D04E603AF50}.Release.ActiveCfg = Release|Win32
+		{D0213A01-50B3-4F78-AC70-4D04E603AF50}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

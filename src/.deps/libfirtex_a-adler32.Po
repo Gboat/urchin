@@ -1,0 +1,6 @@
+libfirtex_a-adler32.o: ../src/utility/zlib/adler32.c \
+ ../src/utility/zlib/zlib.h ../src/utility/zlib/zconf.h
+
+../src/utility/zlib/zlib.h:
+
+../src/utility/zlib/zconf.h:

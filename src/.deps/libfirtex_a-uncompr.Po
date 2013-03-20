@@ -1,0 +1,6 @@
+libfirtex_a-uncompr.o: ../src/utility/zlib/uncompr.c \
+ ../src/utility/zlib/zlib.h ../src/utility/zlib/zconf.h
+
+../src/utility/zlib/zlib.h:
+
+../src/utility/zlib/zconf.h:

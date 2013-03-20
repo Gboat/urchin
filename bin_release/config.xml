@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+	<analyzer>
+		<parameter type="string">stemmer=snowball:English</parameter>
+	</analyzer>
+	<index>
+		<memory type="int64">28000000</memory>
+		<maxIndexTerms type="int32">10000</maxIndexTerms>
+	</index>
+	<search>
+		<memory type="int64">50000000</memory>
+	</search>
+	<mergestrategy>
+		<strategy type="string">NO</strategy>
+		<param type="string"/>
+	</mergestrategy>
+	<advance>
+		<mms>
+			<word_level>
+				<strategy type="string">exp:32:2</strategy>
+			</word_level>
+			<document_level>
+				<strategy type="string">exp:32:2</strategy>
+			</document_level>
+			<document_level_0>
+				<strategy type="string">exp:32:2</strategy>
+			</document_level_0>
+		</mms>
+	</advance>
+	<log>
+		<level type="string">default_level</level>
+	</log>
+</config>

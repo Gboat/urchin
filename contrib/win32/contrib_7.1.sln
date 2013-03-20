@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Snowball", "Snowball.vcproj", "{ABCF2DFF-C680-497E-A81E-422646D6DEBB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{ABCF2DFF-C680-497E-A81E-422646D6DEBB}.Debug.ActiveCfg = Debug|Win32
+		{ABCF2DFF-C680-497E-A81E-422646D6DEBB}.Debug.Build.0 = Debug|Win32
+		{ABCF2DFF-C680-497E-A81E-422646D6DEBB}.Release.ActiveCfg = Release|Win32
+		{ABCF2DFF-C680-497E-A81E-422646D6DEBB}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

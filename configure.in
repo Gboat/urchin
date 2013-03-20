@@ -1,0 +1,59 @@
+AC_INIT(configure.in)
+
+AM_CONFIG_HEADER(config.h)
+AM_INIT_AUTOMAKE(firtex, 1.0.3)
+
+#AC_LIBTOOL_WIN32_DLL
+AC_LANG_CPLUSPLUS
+AC_PROG_CXX
+AC_PROG_CC
+AC_PROG_RANLIB
+AM_PROG_LIBTOOL
+
+LIBS=" -Ldl" "-Lpthread"
+
+# Check for dl
+AC_CHECK_LIB( dl, dlopen, [LIBS="$LIBS -ldl"],exit 1)
+
+# Check for pthread
+AC_CHECK_LIB( pthread, pthread_create,[LIBS="$LIBS -lpthread"],exit 1)
+
+# CFLAGS	="-g"
+
+AC_ARG_ENABLE(debug,
+			[ --enable-debug turn on debug],
+			CXXFLAGS="$CXXFLAGS -g3 -D_DEBUG=1")
+
+dnl #######################################################################
+dnl # Doxygen Stuff
+dnl #######################################################################
+AC_CHECK_PROG(DOXYGEN, doxygen, true, false)
+if test $DOXYGEN = false; then
+	AC_MSG_WARN([*** doxygen not found, docs will not be available])
+	enable_doxygen=no
+else
+  enable_doxygen=yes
+	AC_CHECK_PROG(DOT, dot, true, false)
+	if test $DOT = false; then
+		enable_dot = no;
+		AC_MSG_WARN([*** dot not found, graphs will not be available])
+	else
+		enable_dot = yes;
+	fi
+fi
+AC_SUBST(enable_doxygen)
+AC_SUBST(enable_dot)
+
+
+AC_CONFIG_FILES([Makefile                
+                 app/fxist4c/Makefile 
+				 app/Fxist/Makefile 				 
+                 plugins/HTMLParserPlugin/Makefile
+                 src/Makefile
+		         win32/Makefile
+		        bin_release/Makefile
+		        bin_debug/Makefile		        
+		        contrib/snowball/Makefile
+		        contrib/win32/Makefile
+		        doc/Makefile])
+AC_OUTPUT

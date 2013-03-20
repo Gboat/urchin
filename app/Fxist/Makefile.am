@@ -1,0 +1,72 @@
+# not a GNU package. You can remove this line, if
+# have all needed files, that a GNU package needs
+
+EXTRA_DIST = \
+	AnalyzerOptionDlg.cpp\
+	AnalyzerOptionDlg.h\
+	ChildDialog.cpp\
+	ChildDialog.h\
+	CMemDC.h\
+	CollectionCfgDlg.cpp\
+	CollectionCfgDlg.h\
+	CreateFXCollectionDlg.cpp\
+	CreateFXCollectionDlg.h\
+	CreateStopFileDlg.cpp\
+	CreateStopFileDlg.h\
+	DocumentsDlg.cpp\
+	DocumentsDlg.h\
+	Fxist.cpp\
+	Fxist.h\
+	HierMergeAdvanceDlg.cpp\
+	HierMergeAdvanceDlg.h\
+	Fxist.rc\
+	Fxist_7.1.vcproj\
+	Fxist_8.0.vcproj\
+	FxistDoc.cpp\
+	FxistDoc.h\
+	FxistView.cpp\
+	FxistView.h\
+	HyperLink.cpp\
+	HyperLink.h\
+	IndexingDlg.cpp\
+	IndexingDlg.h\
+	IndexingProgressDlg.cpp\
+	IndexingProgressDlg.h\
+	IndexMaintainDlg.cpp\
+	IndexMaintainDlg.h\
+	LogDlg.cpp\
+	LogDlg.h\
+	LogOptionDlg.cpp\
+	LogOptionDlg.h\
+	MainFrm.cpp\
+	MainFrm.h\
+	OverviewDlg.cpp\
+	OverviewDlg.h\
+	ParserOptDlg.cpp\
+	ParserOptDlg.h\
+	PluginDlg.cpp\
+	PluginDlg.h\
+	ReadMe.txt\
+	ResizableDialog.cpp\
+	ResizableDialog.h\
+	resource.h\
+	SchemaDlg.cpp\
+	SchemaDlg.h\
+	SearchingDlg.cpp\
+	SearchingDlg.h\
+	stdafx.cpp\
+	stdafx.h\
+	TabView.cpp\
+	TabView.h\
+	TermVectorDlg.cpp\
+	TermVectorDlg.h\
+	TextProgressCtrl.cpp\
+	TextProgressCtrl.h\
+	res/FxistDoc.ico\
+	res/Fxist.ico\
+	res/Fxist.manifest\
+	res/Fxist.rc2\
+	res/logo.bmp\
+	res/Toolbar.bmp	
+
+

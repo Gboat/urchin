@@ -1,0 +1,1 @@
+libfirtex_a-gvmat32c.o: ../src/utility/zlib/gvmat32c.c

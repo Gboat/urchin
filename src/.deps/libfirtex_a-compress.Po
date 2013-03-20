@@ -1,0 +1,6 @@
+libfirtex_a-compress.o: ../src/utility/zlib/compress.c \
+ ../src/utility/zlib/zlib.h ../src/utility/zlib/zconf.h
+
+../src/utility/zlib/zlib.h:
+
+../src/utility/zlib/zconf.h:

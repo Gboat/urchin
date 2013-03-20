@@ -1,0 +1,945 @@
+libfirtex_a-TrecCollection.o: ../src/collection/TrecCollection.cpp \
+ ../include/collection/TrecCollection.h \
+ ../include/collection/Collection.h \
+ ../include/collection/../utility/StdHeader.h /usr/include/c++/4.4/string \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/c++config.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/bits/predefs.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/4.4/bits/stringfwd.h \
+ /usr/include/c++/4.4/bits/char_traits.h \
+ /usr/include/c++/4.4/bits/stl_algobase.h /usr/include/c++/4.4/cstddef \
+ /usr/lib/gcc/i686-linux-gnu/4.4.5/include/stddef.h \
+ /usr/include/c++/4.4/bits/functexcept.h \
+ /usr/include/c++/4.4/exception_defines.h \
+ /usr/include/c++/4.4/bits/cpp_type_traits.h \
+ /usr/include/c++/4.4/ext/type_traits.h \
+ /usr/include/c++/4.4/ext/numeric_traits.h \
+ /usr/include/c++/4.4/bits/stl_pair.h /usr/include/c++/4.4/bits/move.h \
+ /usr/include/c++/4.4/bits/concept_check.h \
+ /usr/include/c++/4.4/bits/stl_iterator_base_types.h \
+ /usr/include/c++/4.4/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/4.4/bits/stl_iterator.h \
+ /usr/include/c++/4.4/debug/debug.h /usr/include/c++/4.4/bits/postypes.h \
+ /usr/include/c++/4.4/cwchar /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/lib/gcc/i686-linux-gnu/4.4.5/include/stdarg.h \
+ /usr/include/bits/wchar.h /usr/include/xlocale.h \
+ /usr/include/bits/wchar2.h /usr/include/c++/4.4/bits/allocator.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/c++allocator.h \
+ /usr/include/c++/4.4/ext/new_allocator.h /usr/include/c++/4.4/new \
+ /usr/include/c++/4.4/exception /usr/include/c++/4.4/bits/localefwd.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/c++locale.h \
+ /usr/include/c++/4.4/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/4.4/iosfwd \
+ /usr/include/c++/4.4/cctype /usr/include/ctype.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/c++/4.4/bits/ostream_insert.h \
+ /usr/include/c++/4.4/cxxabi-forced.h \
+ /usr/include/c++/4.4/bits/stl_function.h \
+ /usr/include/c++/4.4/backward/binders.h \
+ /usr/include/c++/4.4/bits/basic_string.h \
+ /usr/include/c++/4.4/ext/atomicity.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/gthr.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h /usr/include/bits/unistd.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/atomic_word.h \
+ /usr/include/c++/4.4/initializer_list \
+ /usr/include/c++/4.4/bits/basic_string.tcc /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ ../include/config/configure.h \
+ ../include/collection/../utility/Exception.h \
+ /usr/include/c++/4.4/iostream /usr/include/c++/4.4/ostream \
+ /usr/include/c++/4.4/ios /usr/include/c++/4.4/bits/ios_base.h \
+ /usr/include/c++/4.4/bits/locale_classes.h \
+ /usr/include/c++/4.4/bits/locale_classes.tcc \
+ /usr/include/c++/4.4/streambuf /usr/include/c++/4.4/bits/streambuf.tcc \
+ /usr/include/c++/4.4/bits/basic_ios.h \
+ /usr/include/c++/4.4/bits/locale_facets.h /usr/include/c++/4.4/cwctype \
+ /usr/include/wctype.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/ctype_base.h \
+ /usr/include/c++/4.4/bits/streambuf_iterator.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/ctype_inline.h \
+ /usr/include/c++/4.4/bits/locale_facets.tcc \
+ /usr/include/c++/4.4/bits/basic_ios.tcc \
+ /usr/include/c++/4.4/bits/ostream.tcc /usr/include/c++/4.4/istream \
+ /usr/include/c++/4.4/bits/istream.tcc /usr/include/c++/4.4/sstream \
+ /usr/include/c++/4.4/bits/sstream.tcc \
+ ../include/collection/../utility/FXString.h \
+ ../include/collection/../utility/typedefs.h \
+ ../include/collection/../utility/platform.h \
+ /usr/lib/gcc/i686-linux-gnu/4.4.5/include-fixed/limits.h \
+ /usr/lib/gcc/i686-linux-gnu/4.4.5/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/stdio_lim.h \
+ /usr/lib/gcc/i686-linux-gnu/4.4.5/include/float.h \
+ /usr/include/sys/socket.h /usr/include/sys/uio.h \
+ /usr/include/sys/types.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/uio.h \
+ /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/asm/socket.h /usr/include/asm-generic/socket.h \
+ /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
+ /usr/include/bits/socket2.h /usr/include/sys/stat.h \
+ /usr/include/bits/stat.h /usr/include/netdb.h /usr/include/netinet/in.h \
+ /usr/include/stdint.h /usr/include/bits/in.h /usr/include/rpc/netdb.h \
+ /usr/include/bits/siginfo.h /usr/include/bits/netdb.h \
+ /usr/include/arpa/inet.h /usr/include/fcntl.h /usr/include/bits/fcntl.h \
+ /usr/include/bits/fcntl2.h /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/bits/stdio2.h \
+ /usr/include/string.h /usr/include/bits/string3.h \
+ ../include/collection/../utility/tchar.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib.h \
+ ../include/collection/../utility/stdint.h /usr/include/inttypes.h \
+ ../include/utility/Exception.h \
+ ../include/collection/../document/doctypedef.h \
+ ../include/utility/StdHeader.h ../include/utility/StringUtils.h \
+ /usr/include/c++/4.4/vector /usr/include/c++/4.4/bits/stl_construct.h \
+ /usr/include/c++/4.4/bits/stl_uninitialized.h \
+ /usr/include/c++/4.4/bits/stl_vector.h \
+ /usr/include/c++/4.4/bits/stl_bvector.h \
+ /usr/include/c++/4.4/bits/vector.tcc /usr/include/c++/4.4/algorithm \
+ /usr/include/c++/4.4/bits/stl_algo.h /usr/include/c++/4.4/cstdlib \
+ /usr/include/c++/4.4/bits/algorithmfwd.h \
+ /usr/include/c++/4.4/bits/stl_heap.h \
+ /usr/include/c++/4.4/bits/stl_tempbuf.h ../include/utility/platform.h \
+ /usr/include/c++/4.4/map /usr/include/c++/4.4/bits/stl_tree.h \
+ /usr/include/c++/4.4/bits/stl_map.h \
+ /usr/include/c++/4.4/bits/stl_multimap.h \
+ ../include/collection/../index/IndexWriter.h \
+ /usr/include/c++/4.4/fstream /usr/include/c++/4.4/bits/codecvt.h \
+ /usr/include/c++/4.4/cstdio \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/4.4/i686-linux-gnu/bits/c++io.h \
+ /usr/include/c++/4.4/bits/fstream.tcc \
+ ../include/collection/../index/../parser/Parser.h \
+ ../include/collection/../index/../parser/../utility/StdHeader.h \
+ ../include/collection/../index/../parser/../document/Document.h \
+ ../include/collection/../index/../parser/../document/../utility/StdHeader.h \
+ ../include/collection/../index/../parser/../document/doctypedef.h \
+ ../include/collection/../index/../parser/../document/../utility/charsetdef.h \
+ ../include/collection/../index/../parser/../document/../utility/../utility/StdHeader.h \
+ ../include/collection/../index/../parser/../document/Field.h \
+ ../include/collection/../index/../parser/../document/../utility/Reader.h \
+ ../include/collection/../index/../parser/../document/../utility/StdHeader.h \
+ ../include/collection/../index/../parser/../document/../utility/charsetdef.h \
+ ../include/collection/../index/../parser/../document/../analyzer/Tokens.h \
+ ../include/collection/../index/../parser/../document/../analyzer/Token.h \
+ ../include/collection/../index/../parser/../document/../analyzer/../utility/StdHeader.h \
+ ../include/collection/../index/../parser/../document/../analyzer/../utility/FXString.h \
+ ../include/collection/../index/../parser/../document/../analyzer/../index/Term.h \
+ ../include/collection/../index/../parser/../document/../analyzer/../index/../utility/StdHeader.h \
+ ../include/collection/../index/../parser/../document/../analyzer/../index/../utility/FXString.h \
+ ../include/utility/Number.h \
+ ../include/collection/../index/../parser/../document/../analyzer/../utility/StringUtils.h \
+ ../include/utility/charsetdef.h \
+ ../include/collection/../index/../parser/../document/../utility/Number.h \
+ ../include/collection/../index/../parser/../document/../utility/FXString.h \
+ ../include/collection/../index/../parser/../document/../utility/DateTime.h \
+ ../include/collection/../index/../parser/../document/DocumentSchema.h \
+ ../include/collection/../index/../parser/../document/../utility/XML.h \
+ ../include/collection/../index/../parser/../document/../utility/typedefs.h \
+ ../include/collection/../index/../parser/../document/../utility/StringUtils.h \
+ ../include/collection/../index/../parser/../document/../utility/Misc.h \
+ /usr/include/c++/4.4/list /usr/include/c++/4.4/bits/stl_list.h \
+ /usr/include/c++/4.4/bits/list.tcc \
+ ../include/collection/../index/../parser/../document/../utility/XML.inl \
+ ../include/collection/../index/../parser/../document/../index/Posting.h \
+ ../include/collection/../index/../parser/../document/../index/../utility/StdHeader.h \
+ ../include/collection/../index/../parser/../document/../index/../store/IndexOutput.h \
+ ../include/collection/../index/../parser/../document/../index/../store/../utility/StdHeader.h \
+ ../include/collection/../index/../parser/../document/../index/../store/IndexInput.h \
+ ../include/collection/../index/../parser/../document/../index/../store/../utility/FXString.h \
+ ../include/collection/../index/../parser/../document/../index/../utility/MemCache.h \
+ ../include/collection/../index/../parser/../document/../index/../utility/Config.h \
+ ../include/collection/../index/../parser/../document/../index/../utility/StdHeader.h \
+ ../include/collection/../index/../parser/../document/../index/../utility/logger.h \
+ ../include/thread/FirteXThreads.h ../include/thread/Lockable.h \
+ ../include/thread/Mutex.h ../include/thread/linux/Mutex.h \
+ ../include/thread/linux/../Lockable.h ../include/thread/Guard.h \
+ ../include/thread/Thread.h ../include/thread/linux/Thread.h \
+ /usr/include/assert.h ../include/thread/Runnalble.h \
+ ../include/collection/../index/../parser/../document/../index/../utility/Starter.h \
+ ../include/collection/../index/../parser/../document/../index/../utility/Misc.h \
+ /usr/include/c++/4.4/cmath /usr/include/c++/4.4/bits/cmath.tcc \
+ ../include/collection/../index/../parser/../document/../index/../utility/typedefs.h \
+ ../include/collection/../index/../parser/../document/../utility/Config.h \
+ ../include/collection/../index/../parser/../document/Field.h \
+ ../include/collection/../index/../parser/../utility/FileReader.h \
+ ../include/collection/../index/../parser/../utility/../utility/StdHeader.h \
+ ../include/collection/../index/../parser/../utility/Reader.h \
+ ../include/collection/../index/../parser/../utility/StringReader.h \
+ ../include/collection/../index/../parser/../utility/../utility/StringUtils.h \
+ ../include/collection/../index/../parser/../utility/Config.h \
+ ../include/collection/../index/../parser/../document/DocumentSchema.h \
+ ../include/collection/../index/../analyzer/Analyzer.h \
+ ../include/collection/../index/../analyzer/../utility/StdHeader.h \
+ ../include/collection/../index/../analyzer/../document/Document.h \
+ ../include/collection/../index/../analyzer/../parser/Parser.h \
+ ../include/collection/../index/../analyzer/Tokens.h \
+ ../include/collection/../index/../analyzer/TokenFilter.h \
+ ../include/collection/../index/../analyzer/../document/doctypedef.h \
+ ../include/collection/../index/../utility/Reader.h \
+ ../include/collection/../index/../document/Document.h \
+ ../include/collection/../index/../store/Directory.h \
+ ../include/collection/../index/../store/../utility/StdHeader.h \
+ ../include/collection/../index/BarrelsInfo.h \
+ ../include/collection/../index/../utility/StdHeader.h \
+ ../include/collection/../index/../utility/FXString.h \
+ ../include/collection/../index/FieldsInfo.h \
+ ../include/collection/../index/../document/Field.h \
+ ../include/collection/../index/../store/IndexInput.h \
+ ../include/collection/../index/../store/IndexOutput.h \
+ ../include/collection/../index/../document/DocumentSchema.h \
+ ../include/collection/../index/../index/Posting.h \
+ ../include/collection/../index/IndexBarrelWriter.h \
+ ../include/collection/../index/Posting.h \
+ ../include/collection/../index/StoredFieldsWriter.h \
+ ../include/collection/../index/StoredFieldsReader.h \
+ ../include/collection/../index/Term.h \
+ ../include/collection/../index/TermDocFreqs.h \
+ ../include/collection/../index/TermPositions.h \
+ ../include/collection/../index/FieldIndexer.h \
+ ../include/collection/../index/OutputDescriptor.h \
+ ../include/collection/../index/../utility/MemCache.h \
+ ../include/collection/../index/../index/NormsWriter.h \
+ ../include/collection/../index/../index/../utility/StdHeader.h \
+ ../include/collection/../index/../index/../document/Field.h \
+ ../include/collection/../index/../index/../store/IndexOutput.h \
+ ../include/collection/../index/../index/../store/Directory.h \
+ ../include/collection/../index/../index/../search/Similarity.h \
+ ../include/collection/../index/../index/../search/../utility/StdHeader.h \
+ ../include/collection/../index/../index/../search/../index/Term.h \
+ ../include/collection/../index/../index/../search/../utility/SmallFloat.h \
+ ../include/collection/../index/../index/../search/../utility/StdHeader.h \
+ ../include/collection/../index/../index/NormBytes.h \
+ ../include/collection/../index/../index/../utility/Config.h \
+ ../include/collection/../index/../index/ForwardIndexWriter.h \
+ ../include/collection/../index/../index/../document/Document.h \
+ ../include/collection/../index/IndexMerger.h \
+ ../include/collection/../index/../utility/PriorityQueue.h \
+ ../include/collection/../index/../utility/StdHeader.h \
+ ../include/collection/../index/../utility/StringUtils.h \
+ ../include/collection/../index/FieldMerger.h \
+ ../include/collection/../index/TermIterator.h \
+ ../include/collection/../index/TermReader.h \
+ ../include/collection/../index/TermInfo.h \
+ ../include/collection/../index/../utility/BitVector.h \
+ ../include/collection/../index/../utility/../utility/StdHeader.h \
+ ../include/collection/../index/../utility/../store/Directory.h \
+ ../include/collection/../index/PostingMerger.h \
+ ../include/index/OutputDescriptor.h ../include/index/InputDescriptor.h \
+ ../include/index/../store/IndexInput.h ../include/utility/BitVector.h \
+ ../include/utility/Configurator.h ../include/utility/StdHeader.h \
+ ../include/utility/../document/Field.h \
+ ../include/utility/../document/DocumentSchema.h \
+ ../include/collection/../thread/FirteXThreads.h \
+ ../include/collection/../utility/StringUtils.h \
+ ../include/utility/dirent.h /usr/include/dirent.h \
+ /usr/include/bits/dirent.h ../include/index/IndexWriter.h \
+ /usr/include/c++/4.4/memory \
+ /usr/include/c++/4.4/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/4.4/backward/auto_ptr.h
+
+../include/collection/TrecCollection.h:
+
+../include/collection/Collection.h:
+
+../include/collection/../utility/StdHeader.h:
+
+/usr/include/c++/4.4/string:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/c++config.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/predefs.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/4.4/bits/stringfwd.h:
+
+/usr/include/c++/4.4/bits/char_traits.h:
+
+/usr/include/c++/4.4/bits/stl_algobase.h:
+
+/usr/include/c++/4.4/cstddef:
+
+/usr/lib/gcc/i686-linux-gnu/4.4.5/include/stddef.h:
+
+/usr/include/c++/4.4/bits/functexcept.h:
+
+/usr/include/c++/4.4/exception_defines.h:
+
+/usr/include/c++/4.4/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.4/ext/type_traits.h:
+
+/usr/include/c++/4.4/ext/numeric_traits.h:
+
+/usr/include/c++/4.4/bits/stl_pair.h:
+
+/usr/include/c++/4.4/bits/move.h:
+
+/usr/include/c++/4.4/bits/concept_check.h:
+
+/usr/include/c++/4.4/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/4.4/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/4.4/bits/stl_iterator.h:
+
+/usr/include/c++/4.4/debug/debug.h:
+
+/usr/include/c++/4.4/bits/postypes.h:
+
+/usr/include/c++/4.4/cwchar:
+
+/usr/include/wchar.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.4.5/include/stdarg.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/wchar2.h:
+
+/usr/include/c++/4.4/bits/allocator.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/c++allocator.h:
+
+/usr/include/c++/4.4/ext/new_allocator.h:
+
+/usr/include/c++/4.4/new:
+
+/usr/include/c++/4.4/exception:
+
+/usr/include/c++/4.4/bits/localefwd.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/c++locale.h:
+
+/usr/include/c++/4.4/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/c++/4.4/iosfwd:
+
+/usr/include/c++/4.4/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/c++/4.4/bits/ostream_insert.h:
+
+/usr/include/c++/4.4/cxxabi-forced.h:
+
+/usr/include/c++/4.4/bits/stl_function.h:
+
+/usr/include/c++/4.4/backward/binders.h:
+
+/usr/include/c++/4.4/bits/basic_string.h:
+
+/usr/include/c++/4.4/ext/atomicity.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/gthr.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/bits/unistd.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/atomic_word.h:
+
+/usr/include/c++/4.4/initializer_list:
+
+/usr/include/c++/4.4/bits/basic_string.tcc:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+../include/config/configure.h:
+
+../include/collection/../utility/Exception.h:
+
+/usr/include/c++/4.4/iostream:
+
+/usr/include/c++/4.4/ostream:
+
+/usr/include/c++/4.4/ios:
+
+/usr/include/c++/4.4/bits/ios_base.h:
+
+/usr/include/c++/4.4/bits/locale_classes.h:
+
+/usr/include/c++/4.4/bits/locale_classes.tcc:
+
+/usr/include/c++/4.4/streambuf:
+
+/usr/include/c++/4.4/bits/streambuf.tcc:
+
+/usr/include/c++/4.4/bits/basic_ios.h:
+
+/usr/include/c++/4.4/bits/locale_facets.h:
+
+/usr/include/c++/4.4/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/ctype_base.h:
+
+/usr/include/c++/4.4/bits/streambuf_iterator.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/ctype_inline.h:
+
+/usr/include/c++/4.4/bits/locale_facets.tcc:
+
+/usr/include/c++/4.4/bits/basic_ios.tcc:
+
+/usr/include/c++/4.4/bits/ostream.tcc:
+
+/usr/include/c++/4.4/istream:
+
+/usr/include/c++/4.4/bits/istream.tcc:
+
+/usr/include/c++/4.4/sstream:
+
+/usr/include/c++/4.4/bits/sstream.tcc:
+
+../include/collection/../utility/FXString.h:
+
+../include/collection/../utility/typedefs.h:
+
+../include/collection/../utility/platform.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.4.5/include-fixed/limits.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.4.5/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.4.5/include/float.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/sys/uio.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/uio.h:
+
+/usr/include/bits/socket.h:
+
+/usr/include/bits/sockaddr.h:
+
+/usr/include/asm/socket.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/asm/sockios.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/bits/socket2.h:
+
+/usr/include/sys/stat.h:
+
+/usr/include/bits/stat.h:
+
+/usr/include/netdb.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/in.h:
+
+/usr/include/rpc/netdb.h:
+
+/usr/include/bits/siginfo.h:
+
+/usr/include/bits/netdb.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/bits/fcntl.h:
+
+/usr/include/bits/fcntl2.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/bits/stdio2.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/string3.h:
+
+../include/collection/../utility/tchar.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib.h:
+
+../include/collection/../utility/stdint.h:
+
+/usr/include/inttypes.h:
+
+../include/utility/Exception.h:
+
+../include/collection/../document/doctypedef.h:
+
+../include/utility/StdHeader.h:
+
+../include/utility/StringUtils.h:
+
+/usr/include/c++/4.4/vector:
+
+/usr/include/c++/4.4/bits/stl_construct.h:
+
+/usr/include/c++/4.4/bits/stl_uninitialized.h:
+
+/usr/include/c++/4.4/bits/stl_vector.h:
+
+/usr/include/c++/4.4/bits/stl_bvector.h:
+
+/usr/include/c++/4.4/bits/vector.tcc:
+
+/usr/include/c++/4.4/algorithm:
+
+/usr/include/c++/4.4/bits/stl_algo.h:
+
+/usr/include/c++/4.4/cstdlib:
+
+/usr/include/c++/4.4/bits/algorithmfwd.h:
+
+/usr/include/c++/4.4/bits/stl_heap.h:
+
+/usr/include/c++/4.4/bits/stl_tempbuf.h:
+
+../include/utility/platform.h:
+
+/usr/include/c++/4.4/map:
+
+/usr/include/c++/4.4/bits/stl_tree.h:
+
+/usr/include/c++/4.4/bits/stl_map.h:
+
+/usr/include/c++/4.4/bits/stl_multimap.h:
+
+../include/collection/../index/IndexWriter.h:
+
+/usr/include/c++/4.4/fstream:
+
+/usr/include/c++/4.4/bits/codecvt.h:
+
+/usr/include/c++/4.4/cstdio:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/basic_file.h:
+
+/usr/include/c++/4.4/i686-linux-gnu/bits/c++io.h:
+
+/usr/include/c++/4.4/bits/fstream.tcc:
+
+../include/collection/../index/../parser/Parser.h:
+
+../include/collection/../index/../parser/../utility/StdHeader.h:
+
+../include/collection/../index/../parser/../document/Document.h:
+
+../include/collection/../index/../parser/../document/../utility/StdHeader.h:
+
+../include/collection/../index/../parser/../document/doctypedef.h:
+
+../include/collection/../index/../parser/../document/../utility/charsetdef.h:
+
+../include/collection/../index/../parser/../document/../utility/../utility/StdHeader.h:
+
+../include/collection/../index/../parser/../document/Field.h:
+
+../include/collection/../index/../parser/../document/../utility/Reader.h:
+
+../include/collection/../index/../parser/../document/../utility/StdHeader.h:
+
+../include/collection/../index/../parser/../document/../utility/charsetdef.h:
+
+../include/collection/../index/../parser/../document/../analyzer/Tokens.h:
+
+../include/collection/../index/../parser/../document/../analyzer/Token.h:
+
+../include/collection/../index/../parser/../document/../analyzer/../utility/StdHeader.h:
+
+../include/collection/../index/../parser/../document/../analyzer/../utility/FXString.h:
+
+../include/collection/../index/../parser/../document/../analyzer/../index/Term.h:
+
+../include/collection/../index/../parser/../document/../analyzer/../index/../utility/StdHeader.h:
+
+../include/collection/../index/../parser/../document/../analyzer/../index/../utility/FXString.h:
+
+../include/utility/Number.h:
+
+../include/collection/../index/../parser/../document/../analyzer/../utility/StringUtils.h:
+
+../include/utility/charsetdef.h:
+
+../include/collection/../index/../parser/../document/../utility/Number.h:
+
+../include/collection/../index/../parser/../document/../utility/FXString.h:
+
+../include/collection/../index/../parser/../document/../utility/DateTime.h:
+
+../include/collection/../index/../parser/../document/DocumentSchema.h:
+
+../include/collection/../index/../parser/../document/../utility/XML.h:
+
+../include/collection/../index/../parser/../document/../utility/typedefs.h:
+
+../include/collection/../index/../parser/../document/../utility/StringUtils.h:
+
+../include/collection/../index/../parser/../document/../utility/Misc.h:
+
+/usr/include/c++/4.4/list:
+
+/usr/include/c++/4.4/bits/stl_list.h:
+
+/usr/include/c++/4.4/bits/list.tcc:
+
+../include/collection/../index/../parser/../document/../utility/XML.inl:
+
+../include/collection/../index/../parser/../document/../index/Posting.h:
+
+../include/collection/../index/../parser/../document/../index/../utility/StdHeader.h:
+
+../include/collection/../index/../parser/../document/../index/../store/IndexOutput.h:
+
+../include/collection/../index/../parser/../document/../index/../store/../utility/StdHeader.h:
+
+../include/collection/../index/../parser/../document/../index/../store/IndexInput.h:
+
+../include/collection/../index/../parser/../document/../index/../store/../utility/FXString.h:
+
+../include/collection/../index/../parser/../document/../index/../utility/MemCache.h:
+
+../include/collection/../index/../parser/../document/../index/../utility/Config.h:
+
+../include/collection/../index/../parser/../document/../index/../utility/StdHeader.h:
+
+../include/collection/../index/../parser/../document/../index/../utility/logger.h:
+
+../include/thread/FirteXThreads.h:
+
+../include/thread/Lockable.h:
+
+../include/thread/Mutex.h:
+
+../include/thread/linux/Mutex.h:
+
+../include/thread/linux/../Lockable.h:
+
+../include/thread/Guard.h:
+
+../include/thread/Thread.h:
+
+../include/thread/linux/Thread.h:
+
+/usr/include/assert.h:
+
+../include/thread/Runnalble.h:
+
+../include/collection/../index/../parser/../document/../index/../utility/Starter.h:
+
+../include/collection/../index/../parser/../document/../index/../utility/Misc.h:
+
+/usr/include/c++/4.4/cmath:
+
+/usr/include/c++/4.4/bits/cmath.tcc:
+
+../include/collection/../index/../parser/../document/../index/../utility/typedefs.h:
+
+../include/collection/../index/../parser/../document/../utility/Config.h:
+
+../include/collection/../index/../parser/../document/Field.h:
+
+../include/collection/../index/../parser/../utility/FileReader.h:
+
+../include/collection/../index/../parser/../utility/../utility/StdHeader.h:
+
+../include/collection/../index/../parser/../utility/Reader.h:
+
+../include/collection/../index/../parser/../utility/StringReader.h:
+
+../include/collection/../index/../parser/../utility/../utility/StringUtils.h:
+
+../include/collection/../index/../parser/../utility/Config.h:
+
+../include/collection/../index/../parser/../document/DocumentSchema.h:
+
+../include/collection/../index/../analyzer/Analyzer.h:
+
+../include/collection/../index/../analyzer/../utility/StdHeader.h:
+
+../include/collection/../index/../analyzer/../document/Document.h:
+
+../include/collection/../index/../analyzer/../parser/Parser.h:
+
+../include/collection/../index/../analyzer/Tokens.h:
+
+../include/collection/../index/../analyzer/TokenFilter.h:
+
+../include/collection/../index/../analyzer/../document/doctypedef.h:
+
+../include/collection/../index/../utility/Reader.h:
+
+../include/collection/../index/../document/Document.h:
+
+../include/collection/../index/../store/Directory.h:
+
+../include/collection/../index/../store/../utility/StdHeader.h:
+
+../include/collection/../index/BarrelsInfo.h:
+
+../include/collection/../index/../utility/StdHeader.h:
+
+../include/collection/../index/../utility/FXString.h:
+
+../include/collection/../index/FieldsInfo.h:
+
+../include/collection/../index/../document/Field.h:
+
+../include/collection/../index/../store/IndexInput.h:
+
+../include/collection/../index/../store/IndexOutput.h:
+
+../include/collection/../index/../document/DocumentSchema.h:
+
+../include/collection/../index/../index/Posting.h:
+
+../include/collection/../index/IndexBarrelWriter.h:
+
+../include/collection/../index/Posting.h:
+
+../include/collection/../index/StoredFieldsWriter.h:
+
+../include/collection/../index/StoredFieldsReader.h:
+
+../include/collection/../index/Term.h:
+
+../include/collection/../index/TermDocFreqs.h:
+
+../include/collection/../index/TermPositions.h:
+
+../include/collection/../index/FieldIndexer.h:
+
+../include/collection/../index/OutputDescriptor.h:
+
+../include/collection/../index/../utility/MemCache.h:
+
+../include/collection/../index/../index/NormsWriter.h:
+
+../include/collection/../index/../index/../utility/StdHeader.h:
+
+../include/collection/../index/../index/../document/Field.h:
+
+../include/collection/../index/../index/../store/IndexOutput.h:
+
+../include/collection/../index/../index/../store/Directory.h:
+
+../include/collection/../index/../index/../search/Similarity.h:
+
+../include/collection/../index/../index/../search/../utility/StdHeader.h:
+
+../include/collection/../index/../index/../search/../index/Term.h:
+
+../include/collection/../index/../index/../search/../utility/SmallFloat.h:
+
+../include/collection/../index/../index/../search/../utility/StdHeader.h:
+
+../include/collection/../index/../index/NormBytes.h:
+
+../include/collection/../index/../index/../utility/Config.h:
+
+../include/collection/../index/../index/ForwardIndexWriter.h:
+
+../include/collection/../index/../index/../document/Document.h:
+
+../include/collection/../index/IndexMerger.h:
+
+../include/collection/../index/../utility/PriorityQueue.h:
+
+../include/collection/../index/../utility/StdHeader.h:
+
+../include/collection/../index/../utility/StringUtils.h:
+
+../include/collection/../index/FieldMerger.h:
+
+../include/collection/../index/TermIterator.h:
+
+../include/collection/../index/TermReader.h:
+
+../include/collection/../index/TermInfo.h:
+
+../include/collection/../index/../utility/BitVector.h:
+
+../include/collection/../index/../utility/../utility/StdHeader.h:
+
+../include/collection/../index/../utility/../store/Directory.h:
+
+../include/collection/../index/PostingMerger.h:
+
+../include/index/OutputDescriptor.h:
+
+../include/index/InputDescriptor.h:
+
+../include/index/../store/IndexInput.h:
+
+../include/utility/BitVector.h:
+
+../include/utility/Configurator.h:
+
+../include/utility/StdHeader.h:
+
+../include/utility/../document/Field.h:
+
+../include/utility/../document/DocumentSchema.h:
+
+../include/collection/../thread/FirteXThreads.h:
+
+../include/collection/../utility/StringUtils.h:
+
+../include/utility/dirent.h:
+
+/usr/include/dirent.h:
+
+/usr/include/bits/dirent.h:
+
+../include/index/IndexWriter.h:
+
+/usr/include/c++/4.4/memory:
+
+/usr/include/c++/4.4/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/4.4/backward/auto_ptr.h:

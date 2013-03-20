@@ -1,0 +1,1 @@
+libfirtex_a-dirent.o: ../src/utility/dirent.cpp
